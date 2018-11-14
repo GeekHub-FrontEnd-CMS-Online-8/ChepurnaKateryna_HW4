@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+
+body {
+    width: 2000px;
+    height: 4051px;
+    padding: 0;
+    margin: 0;;
+}
+
+.container {
+  width: 1200px;
+  margin: 0px auto;
+  padding: 0 30px 0 0;
+}
+
+.title {
+  font-family: 'Lato-Light';
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 50px;
+  color: #3677fd;
+  text-align: center;
+}
+
+.cookies {
+  background: #194277;
+  min-height: 72px;
+  text-align: center;
+  padding-top: 18px;
+}
+
+.cookies p {
+  font-family: 'Lato-Regular';
+  font-weight: 400;
+  color: white;
+  font-size: 14px;
+  line-height: 36px;
+  margin: 0;
+  display: inline-block;
+  padding-top: 18px;
+}
+
+.cookies .button {
+  border: none;
+  background: white;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 8px 35px;
+  border-radius: 20px;
+  color: #194277;
+  margin: 0 28px;
+  position: relative;
+  right: -24px;
+}
+
+ .cookies .button:hover {
+  background-color: #3399ff;
+  color: white;
+} 
+
+.profile-hover {
+  text-align: center;
+  margin-top: 84px;
+}
+header .button,
+.footer-section button{
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 16px;
+  color: #39ff;
+  background: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 16px 70px 20px;
+  border-radius: 30px;
+}
+.profile-hover .button:hover,
+.footer-section button:hover {
+  background: #194277;
+  color: white;
+}
+/*profile-section*/
+
+.profile-section {
+  background-image: linear-gradient(51deg, #3695ff 0%, #3564fc 100%);
+  /* background: url('img/background-header.jpg') no-repeat center; */
+  background-size: cover;
+  min-height: 775px;
+  padding-top: 25px;
+  position: relative;
+}
+.profile-section .nav:after {
+  position: absolute;
+  content: url('img/menu.png');
+  bottom: 20px;
+  left: 77%;
+  margin-left: -10px;
+}
+
+.profile-section:after {
+  position: absolute;
+  content: url('img/arrow.png');
+  bottom: 20px;
+  left: 50%;
+  margin-left: -10px;
+}
+
+.profile-section .nav {
+  min-height: 40px;
+  position: relative;
+}
+
+.profile-photo {
+  width: 147px;
+  height: 147px;
+  background: white;
+  border-radius: 50%;
+  margin: 47px auto 0;
+  box-shadow: 0 0 0 9px rgba(255, 255, 255, 0.09), 0 0 0 20px rgba(255, 255, 255, 0.09);
+}
+
+.profile-section h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  line-height: 60px;
+  font-family: 'Lato';
+  font-weight: 900;
+  letter-spacing: 1.4px;
+  padding: 0 240px;
+  color: white;
+  text-align: center;
+  margin: 60px 0 0;
+}
+
+.profile-section p {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 35px;
+  font-family: 'Lato-Light';
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  padding: 0 275px;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*.about-section*/
+
+.about-section {
+  height: 390px;
+  padding-top: 49px;
+}
+
+.about-section p {
+  font-family: 'Lato-Regular';
+  font-size: 16px;
+  line-height: 35px;
+  color: #5a5a5a;
+  margin-top: 50px;
+  padding: 0 65px;
+  text-align: center;
+}
+
+/*expert-section*/
+
+.expert-section {
+  height: 1145px;
+  padding-top: 47px;
+  background: #f1f8ff;
+}
+
+.expert-section ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin: 115px 0px 0;
+  padding: 0 10px;
+}
+
+.expert-section li {
+  max-width: 33%;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 85px;
+}
+
+.expert-section img {
+  height: 100%;
+}
+
+.expert-section h3 {
+  font-family: 'Lato-Bold';
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 24px;
+  color: #3677fd;
+  margin: 55px 0 0;
+
+}
+
+.expert-section p{
+  font-family: 'Lato-Regular';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 35px;
+  color: #5a5a5a;
+  padding: 0 18px;
+}
+
+/*works-section*/
+
+.works-section{
+  min-height: 1022px;
+}
+.works-section__content {
+  padding-top: 40px;
+}
+
+.works-section ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 85px;
+  padding: 0 15px;
+}
+
+.works-section li {
+  display: inline-block;
+  height: 272px;
+  width: 357px;
+  
+  background: #f4f4f4;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+.works-section a {
+  display: table;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+}
+
+.works-section a:last-child{
+  padding-top: 40px;
+}
+
+/*clients-section*/
+
+.clients-section{
+  height: 327px;
+  padding-top: 24px;
+  background-color: #f1f8ff;
+}
+.clients-section ul{
+  margin-top: 65px;
+  padding: 0;
+  list-style: none;
+}
+.clients-section li{
+  position: relative;
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 25px;
+}
+
+/*footer*/
+.footer-section{
+  height: 247px;
+  background: url('img/background-footer.png') no-repeat center;
+  background-size: cover;
+}
+.footer-section p{
+  display: inline-block;
+  font-family: 'Lato-Light';
+  font-size: 50px;
+  line-height: 65px;
+  color: white;
+  margin: 86px 28px;
+}
+.footer-section .bold{
+  font-family: 'Lato-Bold';
+}
+.footer-section button{
+  background: #fff;
+  position: relative;
+  bottom: 8px;
+  left: 25px;
+}
