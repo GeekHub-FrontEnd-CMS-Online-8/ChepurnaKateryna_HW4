@@ -23,6 +23,8 @@ body {
   text-align: center;
 }
 
+/* cookies */
+
 .cookies {
   background: #194277;
   min-height: 72px;
@@ -64,7 +66,7 @@ body {
   margin-top: 84px;
 }
 header .button,
-.footer-section button{
+footer .button{
   font-family: 'Lato';
   font-weight: 700;
   font-size: 16px;
@@ -76,13 +78,14 @@ header .button,
   border-radius: 30px;
 }
 .profile-hover .button:hover,
-.footer-section button:hover {
+footer .button:hover {
   background: #194277;
   color: white;
 }
 /*profile-section*/
 
 .profile-section {
+  background-color: #3695ff;
   background-image: linear-gradient(51deg, #3695ff 0%, #3564fc 100%);
   /* background: url('img/background-header.jpg') no-repeat center; */
   background-size: cover;
@@ -90,10 +93,8 @@ header .button,
   padding-top: 25px;
   position: relative;
 }
-.profile-section .nav:after {
+.profile-section .nav{
   position: absolute;
-  content: url('img/menu.png');
-  bottom: 20px;
   left: 77%;
   margin-left: -10px;
 }
@@ -270,12 +271,12 @@ header .button,
 }
 
 /*footer*/
-.footer-section{
+footer{
   height: 247px;
   background: url('img/background-footer.png') no-repeat center;
   background-size: cover;
 }
-.footer-section p{
+footer p{
   display: inline-block;
   font-family: 'Lato-Light';
   font-size: 50px;
@@ -283,10 +284,10 @@ header .button,
   color: white;
   margin: 86px 28px;
 }
-.footer-section .bold{
+footer .bold{
   font-family: 'Lato-Bold';
 }
-.footer-section button{
+footer .button{
   background: #fff;
   position: relative;
   bottom: 8px;
