@@ -2,10 +2,12 @@
 
 
 body {
-    width: 2000px;
-    height: 4051px;
+    width: 100%;
+    /* min-width: 2000px; */
+    height: 100%;
     padding: 0;
-    margin: 0;;
+    margin: auto;
+    outline:none;
 }
 
 .container {
@@ -82,6 +84,76 @@ footer .button:hover {
   background: #194277;
   color: white;
 }
+
+/* menu */
+
+
+.menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 99;
+  display: none;
+}
+
+.exit {
+  background: url("img/exit.png");
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.menu:target {
+  display: block;
+}
+
+.submenu {
+  width: 973px;
+  height: 504px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  position: relative;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.submenu ul {
+  width: 214px;
+  height: 332px;
+  color: #d2d2d2;
+  margin: 0 auto;
+  padding: 80px 0 0;
+  color: gray;
+}
+.submenu-list{
+  list-style: none;
+  text-align: center;
+}
+
+.submenu-list a{
+  color: #d2d2d2;
+  margin-bottom: 50px;
+  font-size: 50px;
+  font-weight: 200;
+  color: gray;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+.submenu-list a:hover {
+  color: #3677fd;
+  text-transform: unset;
+}
+
+
 /*profile-section*/
 
 .profile-section {
@@ -99,9 +171,8 @@ footer .button:hover {
   margin-left: -10px;
 }
 
-.profile-section:after {
+.profile-section .arrow-down {
   position: absolute;
-  content: url('img/arrow.png');
   bottom: 20px;
   left: 50%;
   margin-left: -10px;
@@ -167,6 +238,7 @@ footer .button:hover {
 /*expert-section*/
 
 .expert-section {
+  width: 100%;
   height: 1145px;
   padding-top: 47px;
   background: #f1f8ff;
@@ -181,7 +253,9 @@ footer .button:hover {
 }
 
 .expert-section li {
-  max-width: 33%;
+  float: left;
+
+  width: 33%; 
   display: inline-block;
   text-align: center;
   margin-bottom: 85px;
@@ -228,6 +302,7 @@ footer .button:hover {
 }
 
 .works-section li {
+  float: left;
   display: inline-block;
   height: 272px;
   width: 357px;
